@@ -340,5 +340,76 @@ setInterval(function(){
 <script src="main.js"></script>
 
 </body>
+<!-- MODAL -->
+<div id="updateModal" class="modal">
+  <div class="modal-content">
 
+    <h2>📢 Information / Informacja</h2>
+
+    <p>
+      Our website address has changed.<br>
+      <strong>Nasz adres strony internetowej uległ zmianie.</strong>
+    </p>
+
+    <p>
+      New address / Nowy adres: 
+    </p>
+
+    <p>
+      <a href="www.mag-polska.com" target="_blank">
+        www.mag-polska.com
+      </a>
+    </p>
+
+    <button onclick="closeModal()">Close / Zamknij</button>
+
+  </div>
+</div>
+
+<style>
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+}
+
+.modal-content a {
+  color: #0066cc;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+function closeModal() {
+  document.getElementById("updateModal").style.display = "none";
+}
+</script>
       </html>
